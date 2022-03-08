@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: auto;
+            padding: 0px;
+        }
+        body {
+            background-color: black;
+        }
+        .clear{
+            clear: both;
+        }
+        .wrapper {
+            height: auto;
+            width: 1089px;
+            background-color: rgb(218, 168, 168);
+        }
+        nav{
+            height: 50px;
+            width: 1089px;
+            background-color: rgb(209, 182, 146);
+            line-height: 50px;
+        }
+        header{
+            height: 120px;
+            width: 1089px;
+            background-color: aqua;
+        }
+        .content{
+            height: 300px;
+            width: 1089px;
+            background-color: aquamarine;
+        }
+        footer{
+            width: 1089px;
+            height: 130px;
+            background-color: rgb(124, 172, 48);
+        }
+        aside {
+            width: 44%;
+            height: 300px;
+            background-color: chartreuse;
+            float: left;
+        }
+        section{
+            width: 54%;
+            height: 300px;
+            background-color: azure;
+            float: left;
+        }
+        .menu li{
+            float: left;
+            height: 100%;
+            width: 150px;
+            list-style: none;
+            text-indent: 20px;
+            background-color: rgb(209, 182, 146);
+        }
+        a{
+            color: brown;
+            text-decoration: none;
+        }
+        .menu li:hover{
+            background-color: blue;
+        }
+        li :hover>a{
+            color: gold;
+        }
+        .menu li .menumini{
+            display: none;
+        }
+        .menu li:hover .menumini{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="https://shopxugb.com">All</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">Gift Cards</a>
+                    <ul class="menumini">
+                        <li><a href="">100,000VNĐ</a></li>
+                        <li><a href="">500,000VNĐ</a></li>
+                        <li><a href="">1,000,000VNĐ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">HELP</a></li>
+            </ul>
+            <span>
+                <form action="dangky.php" method="post">
+                    <label for="Email">Email</label>
+                    <input type="email" name="txtEmail" id="txtEmail" placeholder="NHAP DIA CHI EMAIL" required>
+                    <input type="submit" value="Go" style="border-radius: 50%;">
+                </form>
+            </span>
+
+        </nav>
+        <header></header>
+        <div class="clear"></div>
+        <div class="content">
+            <aside>
+                <article>
+                    <h1>Grab bike</h1>
+                </article>
+                <article>
+                    <h1>Grab food</h1>
+                </article>
+                
+            </aside>
+            <section style="margin: 5px;">
+                <h1 style="text-align: center;">THÔNG TIN ĐĂNG KÍ GRAB</h1>
+               <form action="" method="post">
+                   <fieldset>
+                       <legend>THONG TIN CUA BAN</legend>
+                       <label for="lblHOTEN">HOTEN: </label>
+                       <input type="text" name="txtHOTEN" id="txtHOTEN" required placeholder="Họ Tên"> <br> <br>
+                       <label for="lblCMND">CMND: </label>
+                       <input type="text" name="txtCMND" id="txtCMND" required placeholder="CMND"> <br> <br>
+                       <label for="lblDC">DIA CHI: </label>
+                       <input type="text" name="txtDIACHI" id="txtDIACHI" required placeholder="Nhập địa chỉ"> <br> <br>
+                       <label for="lblEMAIL">EMAIL: </label>
+                       <input type="text" name="txtEMAIL" id="txtEMAIL" required placeholder="Nhập địa chỉ email"> <br> <br>
+                       <input type="submit" value="Đăng Kí">
+                   </fieldset>
+               </form>
+            </section>
+
+        </div>
+        <div class="clear">
+        </div>
+        <footer></footer>
+
+    </div>
+</body>
+</html>
